@@ -35,7 +35,8 @@ parser = function(u) {
 
 ans = Map(function(y) {
   url = paste0("https://kenpom.com/index.php?y=", y)
+print(url)
   ans = parser(url)
   ans$year = y
   ans
-}, seq(from=2010, to=2024))
+}, seq(from=2010, to=2025))
